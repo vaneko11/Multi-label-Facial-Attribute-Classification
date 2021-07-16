@@ -20,7 +20,6 @@ data = []
 for img in glob.glob("img_align_celeba/*.jpg"):
     n= cv2.imread(img)
     data.append(n)
-random.shuffle(data)	 
 
 # loop over the training images
 print(len(data))
